@@ -1,0 +1,476 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins&family=Ysabeau:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color:rgb(254, 254, 254);
+ 
+}
+
+header{
+    height: 100px;
+}
+input[type="checkbox"]{
+    display: none;
+}label{
+ position: fixed;
+ right: 5rem;
+ display: none;
+}
+.logo{
+    color: orange;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    /* background-image: radial-gradient(white,white); */
+    /* box-shadow: 10px 10px 50px black; */
+    height: 70px;
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+    background-color: #202064;
+    color: white;
+    position:fixed;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+nav ul li a,li{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+nav ul li a:hover{
+   color: orange;
+}
+.sec1{
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    padding-top: 3rem;
+    /* display: none; */
+  
+}
+
+.sec1 .text{
+    width: 50%;
+    font-size: 2rem;
+    text-align: justify;
+    color: #202064;
+}
+.sec1 .photo img{
+    position: relative;
+    top: -4rem;
+}
+
+.sec1 .text span{
+    color: #202064;
+}
+.photo img{
+    z-index: -100;
+}
+.about .social{
+    display: flex;
+    flex-direction:column;
+    gap: 3rem;
+    justify-content: space-evenly;
+    width: 200px;
+    margin-left: 140px;
+}
+.social i:hover{
+color: red;
+   
+    
+}
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    height: 400px;
+    background-color:#fff;
+    padding-top: 3rem;
+}
+.about .image img{
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+ border-bottom: 0.5rem double #202064;
+}
+.skills {
+    overflow-x: scroll;
+        overflow-y: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 30px;
+    background-color:white;
+    z-index: -100;
+}
+.skills .card{
+    height: 200px;
+    width: 200px;
+    background-color: azure;
+   /* background-image: linear-gradient(to top ,pink,blue); */
+}
+.skills .card-logo{
+    border-radius: 50%;
+    background-image: url("./images/java-logo-1.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    margin: 0 auto;
+}
+.skills .card-logo2{
+    border-radius: 50%;
+    background-image: url("./images/html5-logo-vector.svg");
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    margin: 0 auto;
+}
+.skills .card-logo3{
+    border-radius: 50%;
+    background-image: url("./images/css3-logo-vector.svg");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    margin: 0 auto;
+}
+.skills .card-logo4{
+    border-radius: 50%;
+    background-image: url("./images/javascript-39394.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    margin: 0 auto;
+}.skills .card-logo5{
+    border-radius: 50%;
+    background-image: url("./images/oracle-logo-vector-2.svg");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    margin: 0 auto;
+}
+.skills .card-logo6{
+    border-radius: 50%;
+    background-image: url("./images/pngegg.png");
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    margin: 0 auto;
+}
+.skills .card-logo7{
+    border-radius: 50%;
+    background-image: url("./images/database.png");
+    background-size:80px 80px;
+    width: 100px;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-position: center 2rem;
+    margin: 0 auto;
+}
+.skills .pra{
+    margin: 2rem 0 0 1rem;
+
+}
+
+.tskills {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 30px;
+    background-color:white;
+    z-index: -100;
+}
+.tskills .card{
+    height: 200px;
+    width: 200px;
+    /* background-color:azure; */
+   /* background-image: linear-gradient(to top ,pink,blue); */
+}
+.about .info{
+    width: 20rem;
+    word-spacing: 0.5rem;
+   line-height: 2rem;
+   color: rgb(35, 31, 31);
+   text-align: justify;
+}
+.header-text{
+   text-align: center;
+   /* background-color:rgb(179, 221, 245); */
+   font-size: 2rem;
+   padding-bottom: 10px;
+}
+.info .download{
+    color: #202064;
+    /* background-color: azure; */
+    color:black;
+    padding: 0.4rem;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: 700;
+
+}
+.info .download a{
+    text-decoration: none;
+}
+.info .download:hover{
+    background-color: white;
+
+}
+.info .hireMe{
+    color:white;
+    background-color:#202064;
+    padding: 0.5rem;
+    border-radius: 30px;
+    border: none;
+    font-weight: 400;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fff;
+    color: black;
+    height: 70vh;
+    align-content: center;
+}
+.project .card-project{
+    width: 50vh;
+    margin: 0 auto;
+    height: 200px;
+    line-height: 2rem;
+    text-align: center;
+    /* background-color: azure; */
+    
+   
+    
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 500px;
+    background-color: white;
+}
+.education .edu-card{
+    width: 800px;
+    height: 200px;
+    box-shadow: 10px 5px 20px gray;
+    color: black;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.education .edu-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+.form{
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+}
+.form form{
+    margin-top: 100px;
+}
+.form form input,button{
+    padding: 0.3rem 2rem;
+}
+.form button{
+    background-color: orange;
+}
+.contact{
+    position: absolute;
+    left: auto;
+}
+
+
+@media screen and (max-width:1024px){
+    label{
+        display: block;
+       }
+    nav ul{
+        display: none;
+    }
+    input:checked~ul{
+      display: block;
+      position: relative;
+      top: 4.8rem;
+      right: -1rem;
+      background-color:#202064;
+      box-shadow: -5px 5px 10px grey;
+      padding:1rem ;
+      /* padding-bottom: 3rem; */
+      margin-top: 8rem;
+      /* transition:linear 2s; */
+    }
+    ul>li{
+        padding: 0.4rem;
+        text-align: center;
+        /* border: 1px solid white; */
+    }
+    .sec1{
+        width: 100%;
+    }
+    .sec1 .photo {
+        display: none;
+    }
+    .sec1 .text{
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .skills{
+        overflow-x: scroll;
+        overflow-y: hidden;
+       height: 30vh;
+       padding-left: 20rem;
+    }
+    .skills .card{
+        height: 15vh;
+        border-radius: 10px;
+        text-align: center;
+        display: inline-block;
+        box-shadow: 5px 5px 20px;
+    }
+    .tskills{
+        overflow-y: scroll;
+        overflow-x: hidden;
+       height: 30vh;
+       /* padding-left: 23rem; */
+       display: flex;
+       flex-flow: row wrap;
+    }
+    .tskills .card{
+        height: 8vh;
+        width: 20%;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 5px 5px 20px grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: azure;
+    }
+    .tskills .card p{
+        color: #202064;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
+        height: 600px;
+    }
+    .about .social{
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-evenly;
+        gap: 2rem;
+        align-items: center;
+        margin-right: 78px;
+ 
+    }
+    .about .info{
+        width: 20rem;
+        text-align: center;
+    }
+    .info .download{
+        margin-left:83px;
+    }
+    .form{
+        flex-direction: column;
+        margin-top: 200px;
+    }
+    .form form{
+        display: flex;
+        flex-direction: column;
+    }
+    .education{
+        margin-top: 10rem;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        height: 500px;
+        background-color: white;
+        align-items: center;
+    }
+    .education .edu-card{
+        flex-direction: column;
+        width: 42vh;
+        height: 60vh;
+        text-align: center;
+        box-shadow: 5px 5px 20px gray;
+        color: black;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .education .edu-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+    .contact{
+        position: relative;
+    }
+    .project{
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project .card-project{
+        width: 80vw;
+        height: 40vh;
+        box-shadow: 5px 5px 20px grey;
+        overflow: auto;
+        background-color: azure;
+    }
+
+
+}
+
+
+
+
+
+
