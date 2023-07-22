@@ -356,7 +356,7 @@ color: red;
     .skills{
         overflow-x: scroll;
         overflow-y: hidden;
-       height: 30vh;
+       height: 23vh;
        padding-left: 35rem;
     }
     .skills .card{
